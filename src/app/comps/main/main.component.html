@@ -21,27 +21,36 @@
       <table>
         <tr>
           <td>
-            <input type="button" (click)="sellAll()" value="Sell All" />
+            <input type="button" class="action" (click)="sellAll()" value="Sell All" />
           </td>
         </tr>
         <tr>
           <td>
-            <input type="button" (click)="searchNewOrders()" value="Search new orders" />
+            <input type="button" class="action" (click)="searchNewOrders()" value="Search new orders" />
           </td>
         </tr>
         <tr>
           <td>
-            <input type="button" (click)="resetProfile()" value="Reset profile" />
+            <input type="button" class="action" (click)="resetProfile()" value="Reset profile" />
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td>
+            <input type="button" class="action" (click)="setCoinNames()" value="Set coin names" />
           </td>
         </tr>
         <tr>
           <td>
-            <input type="button" (click)="setCoinNames()" value="Set coin names" />
+            <input type="button" class="action" (click)="showDetails()" value="Show details" />
           </td>
         </tr>
         <tr>
           <td>
-            <input type="button" (click)="showDetails()" value="Show details" />
+            <input type="button" class="action" (click)="configure()" value="Configure" />
           </td>
         </tr>
       </table>

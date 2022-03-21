@@ -48,4 +48,8 @@ export class MainComponent implements OnInit {
   showDetails() {
 
   }
+
+  configure() {
+
+  }
 }
