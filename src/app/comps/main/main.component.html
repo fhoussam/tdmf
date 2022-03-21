@@ -1,0 +1,40 @@
+<div *ngIf="currentStatus">
+  <table>
+    <tr>
+      <td>{{currentStatus.jobConfig.childInterval}} {{currentStatus.mainJobStatus.childReport.currentValue | number:'1.2-2'}}
+      ({{currentStatus.mainJobStatus.childMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.childMaxRsi | number:'1.2-2'}})</td>
+    </tr>
+    <tr>
+      <td>{{currentStatus.jobConfig.parentInterval}} {{currentStatus.mainJobStatus.parentReport.currentValue | number:'1.2-2'}}
+      ({{currentStatus.mainJobStatus.parentMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.parentMaxRsi | number:'1.2-2'}})</td>
+    </tr>
+    <tr>
+      <td>{{getAge()}}</td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td>
+        <input type="button" (click)="sellAll()" value="Sell All" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="button" (click)="searchNewOrders()" value="Search new orders" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="button" (click)="resetProfile()" value="Reset profile" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="button" (click)="setCoinNames()" value="Set coin names" />
+      </td>
+    </tr>
+  </table>
+  <table>
+
+  </table>
+</div>
