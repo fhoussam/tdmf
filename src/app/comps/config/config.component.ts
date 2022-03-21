@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfigComponent implements OnInit {
 
+  intervals = ["M5", "M15", "H1", "H4"];
+
   constructor() { }
 
   ngOnInit(): void {
