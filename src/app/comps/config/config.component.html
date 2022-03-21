@@ -1,52 +1,55 @@
 <form>
   <table>
-    <td>
-      <label for="txt_maxchange">Max change</label><br>
-      <input type="number" id="txt_maxChange" name="txt_maxChange"><br>
+    <tr>
+      <td>
+        <label for="txt_maxchange">Max change</label><br>
+        <input type="number" id="txt_maxChange" name="txt_maxChange"><br>
 
-      <label for="txt_parentinterval">Parent Interval</label><br>
-      <input type="number" id="txt_parentinterval" name="txt_maxChange"><br>
+        <label for="txt_parentinterval">Parent Interval</label><br>
+        <input type="number" id="txt_parentinterval" name="txt_maxChange"><br>
 
-      <label for="txt_childinterval">Child Interval</label><br>
-      <input type="number" id="txt_childinterval" name="txt_maxChange"><br>
+        <label for="txt_childinterval">Child Interval</label><br>
+        <input type="number" id="txt_childinterval" name="txt_maxChange"><br>
 
-      <label for="txt_minrsi"></label>Min RSI<br>
-      <input type="number" id="txt_minrsi" name="txt_maxChange"><br>
+        <label for="txt_minrsi"></label>RSI Child Interval<br>
+        <input type="number" style="width: 77px;" id="txt_minrsi" name="txt_maxChange">
+        <input type="number" style="width: 77px;" id="txt_maxrsi" name="txt_maxChange"><br>
 
-      <label for="txt_maxrsi">Max RSI</label><br>
-      <input type="number" id="txt_maxrsi" name="txt_maxChange"><br>
+        <label for="txt_candlescount">Candles Count</label><br>
+        <input type="number" id="txt_candlescount" name="txt_maxChange"><br>
 
-      <label for="txt_candlescount">Candles Count</label><br>
-      <input type="number" id="txt_candlescount" name="txt_maxChange"><br>
+        <label for="txt_stopLoss">Stop Loss</label><br>
+        <input type="number" id="txt_stopLoss" name="txt_stopLoss"><br>
 
-      <label for="txt_stopLoss">Stop Loss</label><br>
-      <input type="number" id="txt_stopLoss" name="txt_stopLoss"><br>
+        <label for="txt_takeprofit">Take Profit</label><br>
+        <input type="number" id="txt_takeprofit" name="txt_takeprofit"><br>
 
-      <label for="txt_takeprofit">Take Profit</label><br>
-      <input type="number" id="txt_takeprofit" name="txt_takeprofit"><br>
-    </td>
-    <td>
-      <label for="txt_mindip">Min Dip</label><br>
-      <input type="number" id="txt_mindip" name="txt_maxChange"><br>
+        <label for="txt_parentMaxRsi">Parent Max RSI</label><br>
+        <input type="number" id="txt_parentMaxRsi" name="txt_parentMaxRsi"><br>
+      </td>
+      <td style="vertical-align: baseline;">
+        <label for="txt_mindip">Min Dip</label><br>
+        <input type="number" id="txt_mindip" name="txt_maxChange"><br>
 
-      <label for="txt_minlastgreencount">Min Last Green Count</label><br>
-      <input type="number" id="txt_minlastgreencount" name="txt_maxChange"><br>
+        <label for="txt_minlastgreencount">Min Last Green Count</label><br>
+        <input type="number" id="txt_minlastgreencount" name="txt_maxChange"><br>
 
-      <label for="txt_requirepositivebullrun">Require Positive Bullrun</label><br>
-      <input type="number" id="txt_requirepositivebullrun" name="txt_maxChange"><br>
+        <label for="txt_requirepositivebullrun">Require Positive Bullrun</label><br>
+        <input type="number" id="txt_requirepositivebullrun" name="txt_maxChange"><br>
 
-      <label for="txt_bullrunmultiplier">Bull Run Multiplier</label><br>
-      <input type="number" id="txt_bullrunmultiplier" name="txt_maxChange"><br>
+        <label for="txt_bullrunmultiplier">Bull Run Multiplier</label><br>
+        <input type="number" id="txt_bullrunmultiplier" name="txt_maxChange"><br>
 
-      <label for="txt_lqueryminscore">LQuery Min Score</label><br>
-      <input type="number" id="txt_lqueryminscore" name="txt_maxChange"><br>
+        <label for="txt_lqueryminscore">LQuery Min Score</label><br>
+        <input type="number" id="txt_lqueryminscore" name="txt_maxChange"><br>
 
-      <label for="txt_frag">Frag</label><br>
-      <input type="number" id="txt_frag" name="txt_frag"><br>
+        <label for="txt_frag">Frag</label><br>
+        <input type="number" id="txt_frag" name="txt_frag"><br>
 
-      <label for="txt_trailingstoploss">Trailing Stop Loss</label><br>
-      <input type="number" id="txt_trailingstoploss" name="txt_trailingstoploss"><br>
-    </td>
+        <label for="txt_trailingstoploss">Trailing Stop Loss</label><br>
+        <input type="number" id="txt_trailingstoploss" name="txt_trailingstoploss"><br>
+      </td>
+    </tr>
   </table>
 
   <input type="submit" value="Submit">

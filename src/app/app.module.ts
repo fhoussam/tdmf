@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './comps/main/main.component';
 import { ConfigComponent } from './comps/config/config.component';
 import { MainService } from './services/main.service';
+import { AdvancedDetailsComponent } from './comps/advanced-details/advanced-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    ConfigComponent
+    ConfigComponent,
+    AdvancedDetailsComponent,
   ],
   imports: [
     BrowserModule,
