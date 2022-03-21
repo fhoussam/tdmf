@@ -18,10 +18,15 @@ export class MainComponent implements OnInit {
   }
 
   getAge() {
+    this.currentStatus.mainJobStatus.childReport
     let days = this.currentStatus.mainJobStatus.age.days;
     let hours = this.currentStatus.mainJobStatus.age.hours;
     let minutes = this.currentStatus.mainJobStatus.age.minutes;
-    return days + ' days, ' + hours + ' hours, ' + minutes + ' minutes';
+    var result = '';
+    if (days > 0) result += days + 'day(s), ';
+    if (hours > 0) result += hours + 'hour(s), ';
+    if (minutes > 0) result += minutes + 'minute(s)';
+    return result;
   }
 
   sellAll() {

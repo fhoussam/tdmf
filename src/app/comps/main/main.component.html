@@ -1,15 +1,17 @@
 <div *ngIf="currentStatus">
-  <table>
+  <table border="1">
     <tr>
-      <td>{{currentStatus.jobConfig.childInterval}} {{currentStatus.mainJobStatus.childReport.currentValue | number:'1.2-2'}}
-      ({{currentStatus.mainJobStatus.childMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.childMaxRsi | number:'1.2-2'}})</td>
+      <td [class.pattern-match]="currentStatus.mainJobStatus.childReport.eligible">{{currentStatus.jobConfig.childInterval}}</td>
+      <td [class.in-interval]="currentStatus.mainJobStatus.childReport.currentInInterval">{{currentStatus.mainJobStatus.childReport.currentValue | number:'1.2-2'}}</td>
+      <td>({{currentStatus.mainJobStatus.childMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.childMaxRsi | number:'1.2-2'}})</td>
     </tr>
     <tr>
-      <td>{{currentStatus.jobConfig.parentInterval}} {{currentStatus.mainJobStatus.parentReport.currentValue | number:'1.2-2'}}
-      ({{currentStatus.mainJobStatus.parentMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.parentMaxRsi | number:'1.2-2'}})</td>
+      <td [class.in-interval]="currentStatus.mainJobStatus.parentReport.currentInInterval">{{currentStatus.jobConfig.parentInterval}}</td>
+      <td [class.in-interval]="currentStatus.mainJobStatus.parentReport.currentInInterval">{{currentStatus.mainJobStatus.parentReport.currentValue | number:'1.2-2'}}</td>
+      <td>({{currentStatus.mainJobStatus.parentMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.parentMaxRsi | number:'1.2-2'}})</td>
     </tr>
     <tr>
-      <td>{{getAge()}}</td>
+      <td colspan="3">{{getAge()}}</td>
     </tr>
   </table>
   <table>
