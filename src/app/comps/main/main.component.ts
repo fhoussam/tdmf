@@ -25,6 +25,7 @@ export class MainComponent implements OnInit {
     if (days > 0) result += days + 'day(s), ';
     if (hours > 0) result += hours + 'hour(s), ';
     if (minutes > 0) result += minutes + 'minute(s)';
+    console.log(result);
     return result;
   }
 
