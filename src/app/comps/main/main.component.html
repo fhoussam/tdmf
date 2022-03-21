@@ -1,4 +1,5 @@
 <div *ngIf="currentStatus">
+  <p>Started {{getAge()}} ago</p>
   <table>
     <td>
       <table border="1">
@@ -11,9 +12,6 @@
           <td [class.in-interval]="currentStatus.mainJobStatus.parentReport.currentInInterval">{{currentStatus.jobConfig.parentInterval}}</td>
           <td [class.in-interval]="currentStatus.mainJobStatus.parentReport.currentInInterval">{{currentStatus.mainJobStatus.parentReport.currentValue | number:'1.2-2'}}</td>
           <td>({{currentStatus.mainJobStatus.parentMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.parentMaxRsi | number:'1.2-2'}})</td>
-        </tr>
-        <tr>
-          <td colspan="3">{{getAge()}}</td>
         </tr>
       </table>
     </td>
@@ -29,11 +27,6 @@
             <input type="button" class="action" (click)="makeNewOrders()" value="Search new orders" />
           </td>
         </tr>
-        <tr>
-          <td>
-            <input type="button" class="action" (click)="resetProfile()" value="Reset profile" />
-          </td>
-        </tr>
       </table>
     </td>
     <td>
@@ -45,12 +38,7 @@
         </tr>
         <tr>
           <td>
-            <input type="button" class="action" (click)="showDetails()" value="Show details" />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="button" class="action" (click)="configure()" value="Configure" />
+            <input type="button" class="action" (click)="resetProfile()" value="Reset profile" />
           </td>
         </tr>
       </table>
