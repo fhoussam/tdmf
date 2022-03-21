@@ -1,42 +1,50 @@
 <div *ngIf="currentStatus">
-  <table border="1">
-    <tr>
-      <td [class.pattern-match]="currentStatus.mainJobStatus.childReport.eligible">{{currentStatus.jobConfig.childInterval}}</td>
-      <td [class.in-interval]="currentStatus.mainJobStatus.childReport.currentInInterval">{{currentStatus.mainJobStatus.childReport.currentValue | number:'1.2-2'}}</td>
-      <td>({{currentStatus.mainJobStatus.childMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.childMaxRsi | number:'1.2-2'}})</td>
-    </tr>
-    <tr>
-      <td [class.in-interval]="currentStatus.mainJobStatus.parentReport.currentInInterval">{{currentStatus.jobConfig.parentInterval}}</td>
-      <td [class.in-interval]="currentStatus.mainJobStatus.parentReport.currentInInterval">{{currentStatus.mainJobStatus.parentReport.currentValue | number:'1.2-2'}}</td>
-      <td>({{currentStatus.mainJobStatus.parentMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.parentMaxRsi | number:'1.2-2'}})</td>
-    </tr>
-    <tr>
-      <td colspan="3">{{getAge()}}</td>
-    </tr>
-  </table>
   <table>
-    <tr>
-      <td>
-        <input type="button" (click)="sellAll()" value="Sell All" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input type="button" (click)="searchNewOrders()" value="Search new orders" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input type="button" (click)="resetProfile()" value="Reset profile" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input type="button" (click)="setCoinNames()" value="Set coin names" />
-      </td>
-    </tr>
-  </table>
-  <table>
-
+    <td>
+      <table border="1">
+        <tr>
+          <td [class.pattern-match]="currentStatus.mainJobStatus.childReport.eligible">{{currentStatus.jobConfig.childInterval}}</td>
+          <td [class.in-interval]="currentStatus.mainJobStatus.childReport.currentInInterval">{{currentStatus.mainJobStatus.childReport.currentValue | number:'1.2-2'}}</td>
+          <td>({{currentStatus.mainJobStatus.childMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.childMaxRsi | number:'1.2-2'}})</td>
+        </tr>
+        <tr>
+          <td [class.in-interval]="currentStatus.mainJobStatus.parentReport.currentInInterval">{{currentStatus.jobConfig.parentInterval}}</td>
+          <td [class.in-interval]="currentStatus.mainJobStatus.parentReport.currentInInterval">{{currentStatus.mainJobStatus.parentReport.currentValue | number:'1.2-2'}}</td>
+          <td>({{currentStatus.mainJobStatus.parentMinRsi | number:'1.2-2'}} - {{currentStatus.mainJobStatus.parentMaxRsi | number:'1.2-2'}})</td>
+        </tr>
+        <tr>
+          <td colspan="3">{{getAge()}}</td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td>
+            <input type="button" (click)="sellAll()" value="Sell All" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" (click)="searchNewOrders()" value="Search new orders" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" (click)="resetProfile()" value="Reset profile" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" (click)="setCoinNames()" value="Set coin names" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" (click)="showDetails()" value="Show details" />
+          </td>
+        </tr>
+      </table>
+    </td>
   </table>
 </div>

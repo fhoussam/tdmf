@@ -44,4 +44,8 @@ export class MainComponent implements OnInit {
   setCoinNames() {
     this.mainService.setCoinNames();
   }
+
+  showDetails() {
+
+  }
 }
