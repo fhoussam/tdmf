@@ -8,4 +8,7 @@
 
 .action {
   width: 130px;
+  cursor: pointer;
+  height: 45px;
+  margin: 1px;
 }
