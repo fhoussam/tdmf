@@ -18,7 +18,6 @@ export class MainComponent implements OnInit {
   }
 
   getAge() {
-    this.currentStatus.mainJobStatus.childReport
     let days = this.currentStatus.mainJobStatus.age.days;
     let hours = this.currentStatus.mainJobStatus.age.hours;
     let minutes = this.currentStatus.mainJobStatus.age.minutes;
