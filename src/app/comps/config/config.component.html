@@ -1,55 +1,111 @@
 <form>
+
   <table>
     <tr>
       <td>
-
-        <label for="txt_mindip">Min Dip</label><br>
-        <input type="number" id="txt_mindip" name="txt_mindip"><br>
-
-        <label for="txt_stopLoss">Stop Loss</label><br>
-        <input type="number" id="txt_stopLoss" name="txt_stopLoss"><br>
-
-        <label for="txt_trailingstoploss">Trailing Stop Loss</label><br>
-        <input type="number" id="txt_trailingstoploss" name="txt_trailingstoploss"><br>
-
-        <label for="txt_takeprofit">Take Profit</label><br>
-        <input type="number" id="txt_takeprofit" name="txt_takeprofit"><br>
-
-        <label for="txt_maxchange">Max change</label><br>
-        <input type="number" id="txt_maxChange" name="txt_maxChange"><br>
-
-        <label for="txt_minrsi"></label>RSI Child Interval<br>
-        <input type="number" style="width: 77px;" id="txt_minrsi" name="txt_minrsi">
-        <input type="number" style="width: 77px;" id="txt_maxrsi" name="txt_maxrsi"><br>
-
-        <label for="txt_parentMaxRsi">Parent Max RSI</label><br>
-        <input type="number" id="txt_parentMaxRsi" name="txt_parentMaxRsi"><br>
+        <label for="txt_mindip">Min Dip</label>
       </td>
-      <td style="vertical-align: baseline;">
-
-        <label for="txt_parentinterval">Parent Interval</label><br>
-        <select id="txt_parentinterval" name="txt_parentinterval">
-          <option *ngFor="let interval of intervals" value="{{interval}}">{{interval}}</option>
-        </select>
-        <br>
-
-        <label for="txt_childinterval">Child Interval</label><br>
-        <select id="txt_childinterval" name="txt_childinterval">
-          <option *ngFor="let interval of intervals" value="{{interval}}">{{interval}}</option>
-        </select>
-        <br>
-
-        <label for="txt_bullrunmultiplier">Bull Run Multiplier</label><br>
-        <input type="number" id="txt_bullrunmultiplier" name="txt_bullrunmultiplier"><br>
-
-        <label for="txt_frag">Frag</label><br>
-        <input type="number" id="txt_frag" name="txt_frag"><br>
-
-        <label for="txt_candlescount">Candles Count</label><br>
-        <input type="number" id="txt_candlescount" name="txt_candlescount"><br>
+      <td>
+        <input type="number" id="txt_mindip" name="txt_mindip">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="txt_stopLoss">Stop Loss</label>
+      </td>
+      <td>
+        <input type="number" id="txt_stopLoss" name="txt_stopLoss">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="txt_trailingstoploss">Trailing Stop Loss</label>
+      </td>
+      <td>
+        <input type="number" id="txt_trailingstoploss" name="txt_trailingstoploss">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="txt_takeprofit">Take Profit</label>
+      </td>
+      <td>
+        <input type="number" id="txt_takeprofit" name="txt_takeprofit">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="txt_maxchange">Max change</label>
+      </td>
+      <td>
+        <input type="number" id="txt_maxChange" name="txt_maxChange">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="txt_minrsi">RSI Child Interval</label>
+      </td>
+      <td>
+        <input type="number" style="width: 77px;" id="txt_minrsi" name="txt_minrsi">
+        <input type="number" style="width: 77px;" id="txt_maxrsi" name="txt_maxrsi">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="txt_parentMaxRsi">Parent Max RSI</label>
+      </td>
+      <td>
+        <input type="number" id="txt_parentMaxRsi" name="txt_parentMaxRsi">
       </td>
     </tr>
   </table>
 
-  <input type="submit" value="Submit">
+  <table>
+    <tr>
+      <td>
+        <label for="txt_parentinterval">Parent Interval</label>
+      </td>
+      <td>
+        <select id="txt_parentinterval" name="txt_parentinterval">
+          <option *ngFor="let interval of intervals" value="{{interval}}">{{interval}}</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="txt_childinterval">Child Interval</label>
+      </td>
+      <td>
+        <select id="txt_childinterval" name="txt_childinterval">
+          <option *ngFor="let interval of intervals" value="{{interval}}">{{interval}}</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="txt_bullrunmultiplier">Bull Run Multiplier</label>
+      </td>
+      <td>
+        <input type="number" id="txt_bullrunmultiplier" name="txt_bullrunmultiplier">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="txt_frag">Frag</label>
+      </td>
+      <td>
+        <input type="number" id="txt_frag" name="txt_frag">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="txt_candlescount">Candles Count</label>
+      </td>
+      <td>
+        <input type="number" id="txt_candlescount" name="txt_candlescount">
+      </td>
+    </tr>
+  </table>
+
+  <input type="submit" value="Update config">
 </form>
